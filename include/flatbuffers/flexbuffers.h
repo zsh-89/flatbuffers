@@ -354,6 +354,10 @@ class Reference {
 
   Type GetType() const { return type_; }
 
+  uint8_t GetByteWidth() const { return byte_width_; }
+
+  uint8_t GetParentWidth() const { return parent_width_; }
+
   bool IsNull() const { return type_ == FBT_NULL; }
   bool IsBool() const { return type_ == FBT_BOOL; }
   bool IsInt() const { return type_ == FBT_INT || type_ == FBT_INDIRECT_INT; }
